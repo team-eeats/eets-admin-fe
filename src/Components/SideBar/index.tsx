@@ -1,6 +1,6 @@
 import { useState } from "react";
 import * as S from "./style";
-import { Font } from "../../Styles/Fonts";
+import { Font } from "../../Styles/Font"
 import Logo from "../../Assets/img/SVG/Logo.svg";
 import { Alert, Page, Vote, Logout, WhiteAlert, WhitePage, WhiteVote } from "../../Assets/img/SVG/index";
 
