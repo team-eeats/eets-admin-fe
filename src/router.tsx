@@ -1,12 +1,15 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import { GlobalStyle } from "./Styles/GlobalStyles";
+import { GlobalStyle } from "./Styles/GlobalStyle.style";
+import Layout from "./Components/Layout";
 
 function router() {
   return (
     <BrowserRouter>
       <GlobalStyle />
       <Routes>
-        <Route />
+        <Route element={<Layout />}>
+          <Route path="/" />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
