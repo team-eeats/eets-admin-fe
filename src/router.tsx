@@ -1,13 +1,15 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { GlobalStyle } from "./Styles/GlobalStyle.style";
-import SideBar from "./Components/SideBar";
+import Layout from "./Components/Layout";
 
 function router() {
   return (
     <BrowserRouter>
       <GlobalStyle />
       <Routes>
-        <Route path="/sidebar" element={<SideBar />} />
+        <Route element={<Layout />}>
+          <Route path="/" />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
